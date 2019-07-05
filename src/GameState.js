@@ -13,7 +13,13 @@ Array.from(Array(7)).forEach(() => {
         let column = getRandomInt(COLUMNS - 1);
 
         if (mines[row][column] === 0) {
-            mines[row][column] = 1;
+            (mines[0][1] = 1);
+            (mines[2][15] = 2);
+            (mines[3][14] = 3);
+            (mines[5][13] = 4);
+            (mines[5][16] = 5);
+            (mines[5][8] = 6);
+            (mines[5][14] = 7);
             break;
         }
     }
